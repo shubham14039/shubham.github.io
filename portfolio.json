@@ -1,57 +1,24 @@
 {
   "name": "Shubham Kumar",
-  "label": "Name",
+  "label": "Software Engineer",
   "image_path": "img/default-image.png",
   "contact": {
     "email": "shubham.142512@gmail.com",
-    "phone": "123-456-7890",
+    "phone": "+91 9569581083",
     "location": "New Delhi, Delhi, India"
   },
   "summary": "A short summary of who you are, your background, experience, and interests to give visitors a quick introduction to you.",
   "base_url": "127.0.0.1:5500",
   "social_links": [
     {
-      "label": "Personal Website",
-      "url": "https://sample.com",
-      "svg_path": "img/globe.svg"
-    },
-    {
-      "label": "First Social",
-      "url": "https://sample.com",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/shubhamkumar142512",
       "svg_path": "img/linkedin.svg"
     },
     {
-      "label": "Second Social",
-      "url": "https://sample.com",
+      "label": "Github",
+      "url": "https://www.github.com/shubham14039",
       "svg_path": "img/github.svg"
-    }
-  ],
-  "work_experience": [
-    {
-      "company": "Latest Job",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
-      "end_date": "Present",
-      "summary": "Short summary about present job and what the position entails",
-      "highlights": [
-        "First Duty of Current Job",
-        "Second Duty of Current Job",
-        "Third Duty of Current Job"
-      ]
-    },
-    {
-      "company": "Previous Job",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous job and what that position entailed",
-      "highlights": [
-        "First Duty of Previous Job",
-        "Second Duty of Previous Job",
-        "Third Duty of Previous Job"
-      ]
     }
   ],
   "projects": [
@@ -104,10 +71,38 @@
       ]
     }
   ],
+  "work_experience": [
+    {
+      "company": "Latest Job",
+      "position": "Position One",
+      "url": "https://sample.com",
+      "start_date": "01/01/2020",
+      "end_date": "Present",
+      "summary": "Short summary about present job and what the position entails",
+      "highlights": [
+        "First Duty of Current Job",
+        "Second Duty of Current Job",
+        "Third Duty of Current Job"
+      ]
+    },
+    {
+      "company": "Previous Job",
+      "position": "Position Two",
+      "url": "https://sample.com",
+      "start_date": "01/01/2010",
+      "end_date": "01/01/2020",
+      "summary": "Short summary about previous job and what that position entailed",
+      "highlights": [
+        "First Duty of Previous Job",
+        "Second Duty of Previous Job",
+        "Third Duty of Previous Job"
+      ]
+    }
+  ],
   "volunteer_experience": [
     {
-      "organization": "Latest Organization",
-      "position": "Position One",
+      "organization": "Jamsetji Tata society for innovation and entrepreneurship",
+      "position": "Member",
       "url": "https://sample.com",
       "start_date": "01/01/2020",
       "end_date": "Present",
@@ -119,52 +114,50 @@
       ]
     },
     {
-      "organization": "Previous Organization",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous volunteer work",
+      "organization": "Jigyasa - The Scientific Guild",
+      "position": "Social Media Manager",
+      "url": "https://jigyasa-scientificguild.github.io/jigyasa/index.html",
+      "start_date": "01/04/2023",
+      "end_date": "20/08/2023",
+      "summary": "Managed and Grew Social media handles for the society",
       "highlights": [
-        "First Duty of Previous Organization",
-        "Second Duty of Previous Organization",
-        "Third Duty of Previous Organization"
+        "Managed projects related to internal events",
+        "Grew the society's reach through effective marketing"
       ]
     }
   ],
   "education": [
     {
-      "institution": "Institution One",
-      "location": "Institution One Location",
-      "url": "https://sample.com",
+      "institution": "Indian Institute of Technology Madras",
+      "location": "Chennai, Tamilnadu, India",
+      "url": "https://www.iitm.ac.in",
       "degrees": [
-        "Master of Science in Computer Science",
+        "Bachelor of Science in Machine Learning",
         "Minor in Mathematics"
       ],
-      "honors": ["Outstanding Student Award", "Dean's List"],
+      "honors": ["Top Course Grade"],
       "gpa_cumulative": "3.5",
       "gpa_major": "4.0",
-      "graduation_date": "01/01/2005"
+      "graduation_date": "31/12/2026"
     },
     {
-      "institution": "Institution Two",
-      "location": "Institution Two Location",
-      "url": "https://sample.com",
+      "institution": "University of Delhi",
+      "location": "New Delhi, Delhi, India",
+      "url": "https://www.du.ac.in",
       "degrees": ["Bachelor of Science in Physics"],
-      "honors": ["Scholarship Recipient"],
       "gpa_cumulative": "3.2",
       "gpa_major": "3.9",
-      "graduation_date": "01/01/2000"
+      "graduation_date": "30/05/2024"
     }
   ],
   "skills": [
     {
-      "name": "My First Skill",
+      "name": "Algorithms",
       "proficiency": 100,
       "proficiency_label": "Proficiency Level"
     },
     {
-      "name": "My Second Skill",
+      "name": "Full Stack Development",
       "proficiency": 80,
       "proficiency_label": "Proficiency Level"
     }
@@ -197,16 +190,6 @@
           "caption": "Image Caption 10"
         }
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "American Sign Language",
-      "fluency": "Professional Working Proficiency"
     }
   ],
   "references": [
