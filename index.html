@@ -6,7 +6,7 @@
 
     <!-- Site Info -->
     <title>Shubham Kumar - Portfolio</title>
-    <meta name="description" content="Shubham Kumar - A short summary of who you are, your background, experience, and interests to give visitors a quick introduction to you.">
+    <meta name="description" content="Shubham Kumar - I&#39;m a Machine Learning Engineer with a focus on designing and deploying AI systems that address real-world challenges. My experience spans computer vision, natural language processing, and predictive modeling, with an emphasis on building scalable, production-grade solutions that drive measurable business outcomes. This portfolio highlights selected projects that reflect both my technical contributions and ongoing work in applied machine intelligence.">
     <meta name="author" content="Shubham Kumar">
 
     <!-- Open Graph Tags: The title of the page for social media sharing. It can match the title tag or be more descriptive. -->
@@ -50,8 +50,20 @@
     <!-- Web app manifest for Progressive Web Apps -->
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Content Security Policy: Uncomment to enhance security by restricting where content can be loaded from (useful for preventing certain attacks like XSS). Update if adding external sources (e.g., Google Fonts, Bootstrap CDN, analytics, etc). -->
-    <!-- <meta http-equiv="Content-Security-Policy" content=" default-src 'self'; script-src 'self' code.jquery.com; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com; img-src 'self' images.examplecdn.com; "> -->
+    <!-- content security policy: uncomment to enhance security by restricting where content can be loaded from (useful for preventing certain attacks like xss). update if adding external sources (e.g., google fonts, bootstrap cdn, analytics, etc). -->
+
+  <meta http-equiv="content-security-policy" content="
+    default-src 'self';
+    script-src 'self' code.jquery.com cdn.jsdelivr.net www.googletagmanager.com www.google-analytics.com;
+    style-src 'self' fonts.googleapis.com cdn.jsdelivr.net;
+    font-src 'self' fonts.gstatic.com;
+    img-src 'self' data: cdn.example.com;
+    connect-src 'self' api.example.com;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+  ">
+
   </head>
 
   <body>
@@ -130,7 +142,7 @@
                 
               </ul>
             
-            <p class="header-summary">A short summary of who you are, your background, experience, and interests to give visitors a quick introduction to you.</p>
+            <p class="header-summary">I&#39;m a Machine Learning Engineer with a focus on designing and deploying AI systems that address real-world challenges. My experience spans computer vision, natural language processing, and predictive modeling, with an emphasis on building scalable, production-grade solutions that drive measurable business outcomes. This portfolio highlights selected projects that reflect both my technical contributions and ongoing work in applied machine intelligence.</p>
           </div>
         </div>
       </div>
@@ -139,46 +151,6 @@
     <div class="page-content">
       <div class="container">
         <main>
-          
-            <section>
-              <h2 class="section-heading">Work Experience</h2>
-              
-                <section>
-                  <h3>
-                    
-                      Position One at <a href="https://sample.com">Latest Job</a>
-                    
-                  </h3>
-                  
-                    <p class="section-label">01/01/2020 - Present</p>
-                  
-                  <p>Short summary about present job and what the position entails</p>
-                  
-                    <ul>
-                      <li>First Duty of Current Job</li><li>Second Duty of Current Job</li><li>Third Duty of Current Job</li>
-                    </ul>
-                  
-                </section>
-              
-                <section>
-                  <h3>
-                    
-                      Position Two at <a href="https://sample.com">Previous Job</a>
-                    
-                  </h3>
-                  
-                    <p class="section-label">01/01/2010 - 01/01/2020</p>
-                  
-                  <p>Short summary about previous job and what that position entailed</p>
-                  
-                    <ul>
-                      <li>First Duty of Previous Job</li><li>Second Duty of Previous Job</li><li>Third Duty of Previous Job</li>
-                    </ul>
-                  
-                </section>
-              
-            </section>
-          
 
           
             <section>
@@ -273,26 +245,50 @@
             </section>
           
 
+          <!--  -->
+          <!--   <section> -->
+          <!--     <h2 class="section-heading">Work Experience</h2> -->
+          <!--      -->
+          <!--       <section> -->
+          <!--         <h3> -->
+          <!--            -->
+          <!--             Position One at <a href="https://sample.com">Latest Job</a> -->
+          <!--            -->
+          <!--         </h3> -->
+          <!--          -->
+          <!--           <p class="section-label">01/01/2020 - Present</p> -->
+          <!--          -->
+          <!--         <p>Short summary about present job and what the position entails</p> -->
+          <!--          -->
+          <!--           <ul> -->
+          <!--             <li>First Duty of Current Job</li><li>Second Duty of Current Job</li><li>Third Duty of Current Job</li> -->
+          <!--           </ul> -->
+          <!--          -->
+          <!--       </section> -->
+          <!--      -->
+          <!--       <section> -->
+          <!--         <h3> -->
+          <!--            -->
+          <!--             Position Two at <a href="https://sample.com">Previous Job</a> -->
+          <!--            -->
+          <!--         </h3> -->
+          <!--          -->
+          <!--           <p class="section-label">01/01/2010 - 01/01/2020</p> -->
+          <!--          -->
+          <!--         <p>Short summary about previous job and what that position entailed</p> -->
+          <!--          -->
+          <!--           <ul> -->
+          <!--             <li>First Duty of Previous Job</li><li>Second Duty of Previous Job</li><li>Third Duty of Previous Job</li> -->
+          <!--           </ul> -->
+          <!--          -->
+          <!--       </section> -->
+          <!--      -->
+          <!--   </section> -->
+          <!--  -->
+
           
             <section>
               <h2 class="section-heading">Volunteer Experience</h2>
-              
-                <section>
-                  <h3>
-                    
-                      Member at <a href="https://sample.com">Jamsetji Tata society for innovation and entrepreneurship</a>
-                    
-                  </h3>
-                  
-                    <p class="section-label">01/01/2020 - Present</p>
-                  
-                  <p>Short summary about present volunteer work</p>
-                  
-                    <ul>
-                      <li>First Duty of Current Organization</li><li>Second Duty of Current Organization</li><li>Third Duty of Current Organization</li>
-                    </ul>
-                  
-                </section>
               
                 <section>
                   <h3>
@@ -303,10 +299,10 @@
                   
                     <p class="section-label">01/04/2023 - 20/08/2023</p>
                   
-                  <p>Managed and Grew Social media handles for the society</p>
+                  <p>Led digital communication strategy and content execution for Jigyasa, a student-led scientific society, with a focus on community growth and event engagement.</p>
                   
                     <ul>
-                      <li>Managed projects related to internal events</li><li>Grew the society&#39;s reach through effective marketing</li>
+                      <li>Spearheaded and executed social media campaigns, resulting in a measurable increase in follower engagement and society visibility.</li><li>Coordinated promotion and coverage for internal academic and outreach events, ensuring consistent and impactful branding.</li>
                     </ul>
                   
                 </section>
@@ -409,90 +405,35 @@
                 
                   <li>
                     <h3>Algorithms</h3>
-                    <div class="skill-bar">
-                      <div class="skill-bar-fill w-100"
-                           role="meter"
-                           aria-valuenow="100"
-                           aria-valuemin="0"
-                           aria-valuemax="100">
-                        <span class="skill-bar-label">Proficiency Level</span>
-                      </div>
+                    <!-- Resolve the code below -->
+                    <div class="outcomes">
+                      <ul>
+                        
+                        <li> Developed scalable algorithms for autonomus AI agents</li>
+                        
+                        <li> Also doiing somethong greadt. Ohh, fuck my engliseh.</li>
+                        
+                      </ul>
                     </div>
+                    <!-- End -->
                   </li>
                 
                   <li>
                     <h3>Full Stack Development</h3>
-                    <div class="skill-bar">
-                      <div class="skill-bar-fill w-80"
-                           role="meter"
-                           aria-valuenow="80"
-                           aria-valuemin="0"
-                           aria-valuemax="100">
-                        <span class="skill-bar-label">Proficiency Level</span>
-                      </div>
+                    <!-- Resolve the code below -->
+                    <div class="outcomes">
+                      <ul>
+                        
+                        <li> Developed scalable algorithms for autonomus AI agents</li>
+                        
+                        <li> Also doiing somethong greadt. Ohh, fuck my engliseh.</li>
+                        
+                      </ul>
                     </div>
+                    <!-- End -->
                   </li>
                 
               </ul>
-            </section>
-          
-
-          
-            <section>
-              <h2 class="section-heading">Interests</h2>
-              
-                <section>
-                  <h3>My First Hobby</h3>
-                  <p>Short summary about my first Hobby</p>
-                  
-                    <div class="gallery side-gallery">
-                      
-                        <figure>
-                          <img width="600"
-                               height="338"
-                               src="https://picsum.photos/600/338?random=7"
-                               alt="Image Caption 7">
-                          <figcaption>Image Caption 7</figcaption>
-                        </figure>
-                      
-                        <figure>
-                          <img width="600"
-                               height="338"
-                               src="https://picsum.photos/600/338?random=8"
-                               alt="Image Caption 8">
-                          <figcaption>Image Caption 8</figcaption>
-                        </figure>
-                      
-                    </div>
-                  
-                </section>
-              
-                <section>
-                  <h3>My Second Hobby</h3>
-                  <p>Short summary about my second hobby</p>
-                  
-                    <div class="gallery side-gallery">
-                      
-                        <figure>
-                          <img width="600"
-                               height="338"
-                               src="https://picsum.photos/600/338?random=9"
-                               alt="Image Caption 9">
-                          <figcaption>Image Caption 9</figcaption>
-                        </figure>
-                      
-                        <figure>
-                          <img width="600"
-                               height="338"
-                               src="https://picsum.photos/600/338?random=10"
-                               alt="Image Caption 10">
-                          <figcaption>Image Caption 10</figcaption>
-                        </figure>
-                      
-                    </div>
-                  
-                </section>
-              
             </section>
           
         </aside>

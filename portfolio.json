@@ -7,7 +7,7 @@
     "phone": "+91 9569581083",
     "location": "New Delhi, Delhi, India"
   },
-  "summary": "A short summary of who you are, your background, experience, and interests to give visitors a quick introduction to you.",
+  "summary": "I'm a Machine Learning Engineer with a focus on designing and deploying AI systems that address real-world challenges. My experience spans computer vision, natural language processing, and predictive modeling, with an emphasis on building scalable, production-grade solutions that drive measurable business outcomes. This portfolio highlights selected projects that reflect both my technical contributions and ongoing work in applied machine intelligence.",
   "base_url": "127.0.0.1:5500",
   "social_links": [
     {
@@ -101,28 +101,15 @@
   ],
   "volunteer_experience": [
     {
-      "organization": "Jamsetji Tata society for innovation and entrepreneurship",
-      "position": "Member",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
-      "end_date": "Present",
-      "summary": "Short summary about present volunteer work",
-      "highlights": [
-        "First Duty of Current Organization",
-        "Second Duty of Current Organization",
-        "Third Duty of Current Organization"
-      ]
-    },
-    {
       "organization": "Jigyasa - The Scientific Guild",
       "position": "Social Media Manager",
       "url": "https://jigyasa-scientificguild.github.io/jigyasa/index.html",
       "start_date": "01/04/2023",
       "end_date": "20/08/2023",
-      "summary": "Managed and Grew Social media handles for the society",
+      "summary": "Led digital communication strategy and content execution for Jigyasa, a student-led scientific society, with a focus on community growth and event engagement.",
       "highlights": [
-        "Managed projects related to internal events",
-        "Grew the society's reach through effective marketing"
+        "Spearheaded and executed social media campaigns, resulting in a measurable increase in follower engagement and society visibility.",
+        "Coordinated promotion and coverage for internal academic and outreach events, ensuring consistent and impactful branding."
       ]
     }
   ],
@@ -153,42 +140,16 @@
   "skills": [
     {
       "name": "Algorithms",
-      "proficiency": 100,
-      "proficiency_label": "Proficiency Level"
-    },
-    {
-      "name": "Full Stack Development",
-      "proficiency": 80,
-      "proficiency_label": "Proficiency Level"
-    }
-  ],
-  "interests": [
-    {
-      "name": "My First Hobby",
-      "summary": "Short summary about my first Hobby",
-      "images": [
-        {
-          "img_path": "https://picsum.photos/600/338?random=7",
-          "caption": "Image Caption 7"
-        },
-        {
-          "img_path": "https://picsum.photos/600/338?random=8",
-          "caption": "Image Caption 8"
-        }
+      "outcomes": [
+        "Developed scalable algorithms for autonomus AI agents",
+        "Also doiing somethong greadt. Ohh, fuck my engliseh."
       ]
     },
     {
-      "name": "My Second Hobby",
-      "summary": "Short summary about my second hobby",
-      "images": [
-        {
-          "img_path": "https://picsum.photos/600/338?random=9",
-          "caption": "Image Caption 9"
-        },
-        {
-          "img_path": "https://picsum.photos/600/338?random=10",
-          "caption": "Image Caption 10"
-        }
+      "name": "Full Stack Development",
+      "outcomes": [
+        "Developed scalable algorithms for autonomus AI agents",
+        "Also doiing somethong greadt. Ohh, fuck my engliseh."
       ]
     }
   ],

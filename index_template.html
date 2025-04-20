@@ -50,8 +50,20 @@
     <!-- Web app manifest for Progressive Web Apps -->
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Content Security Policy: Uncomment to enhance security by restricting where content can be loaded from (useful for preventing certain attacks like XSS). Update if adding external sources (e.g., Google Fonts, Bootstrap CDN, analytics, etc). -->
-    <!-- <meta http-equiv="Content-Security-Policy" content=" default-src 'self'; script-src 'self' code.jquery.com; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com; img-src 'self' images.examplecdn.com; "> -->
+    <!-- content security policy: uncomment to enhance security by restricting where content can be loaded from (useful for preventing certain attacks like xss). update if adding external sources (e.g., google fonts, bootstrap cdn, analytics, etc). -->
+
+  <meta http-equiv="content-security-policy" content="
+    default-src 'self';
+    script-src 'self' code.jquery.com cdn.jsdelivr.net www.googletagmanager.com www.google-analytics.com;
+    style-src 'self' fonts.googleapis.com cdn.jsdelivr.net;
+    font-src 'self' fonts.gstatic.com;
+    img-src 'self' data: cdn.example.com;
+    connect-src 'self' api.example.com;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+  ">
+
   </head>
 
   <body>
@@ -109,31 +121,6 @@
     <div class="page-content">
       <div class="container">
         <main>
-          {% if work_experience %}
-            <section>
-              <h2 class="section-heading">Work Experience</h2>
-              {% for job in work_experience %}
-                <section>
-                  <h3>
-                    {% if job.url %}
-                      {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
-                    {% else %}
-                      {{ job.position }} at {{ job.company }}
-                    {% endif %}
-                  </h3>
-                  {% if job.start_date and job.end_date %}
-                    <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
-                  {% endif %}
-                  {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
-                  {% if job.highlights %}
-                    <ul>
-                      {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
 
           {% if projects %}
             <section>
@@ -170,6 +157,32 @@
               {% endfor %}
             </section>
           {% endif %}
+
+          <!-- {% if work_experience %} -->
+          <!--   <section> -->
+          <!--     <h2 class="section-heading">Work Experience</h2> -->
+          <!--     {% for job in work_experience %} -->
+          <!--       <section> -->
+          <!--         <h3> -->
+          <!--           {% if job.url %} -->
+          <!--             {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a> -->
+          <!--           {% else %} -->
+          <!--             {{ job.position }} at {{ job.company }} -->
+          <!--           {% endif %} -->
+          <!--         </h3> -->
+          <!--         {% if job.start_date and job.end_date %} -->
+          <!--           <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p> -->
+          <!--         {% endif %} -->
+          <!--         {% if job.summary %}<p>{{ job.summary }}</p>{% endif %} -->
+          <!--         {% if job.highlights %} -->
+          <!--           <ul> -->
+          <!--             {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %} -->
+          <!--           </ul> -->
+          <!--         {% endif %} -->
+          <!--       </section> -->
+          <!--     {% endfor %} -->
+          <!--   </section> -->
+          <!-- {% endif %} -->
 
           {% if volunteer_experience %}
             <section>
@@ -261,43 +274,18 @@
                 {% for skill in skills %}
                   <li>
                     <h3>{{ skill.name }}</h3>
-                    <div class="skill-bar">
-                      <div class="skill-bar-fill w-{{ skill.proficiency }}"
-                           role="meter"
-                           aria-valuenow="{{ skill.proficiency }}"
-                           aria-valuemin="0"
-                           aria-valuemax="100">
-                        <span class="skill-bar-label">{{ skill.proficiency_label }}</span>
-                      </div>
+                    <!-- Resolve the code below -->
+                    <div class="outcomes">
+                      <ul>
+                        {% for outcome in skill.outcomes %}
+                        <li> {{ outcome }}</li>
+                        {% endfor %}
+                      </ul>
                     </div>
+                    <!-- End -->
                   </li>
                 {% endfor %}
               </ul>
-            </section>
-          {% endif %}
-
-          {% if interests %}
-            <section>
-              <h2 class="section-heading">Interests</h2>
-              {% for interest in interests %}
-                <section>
-                  <h3>{{ interest.name }}</h3>
-                  {% if interest.summary %}<p>{{ interest.summary }}</p>{% endif %}
-                  {% if interest.images %}
-                    <div class="gallery side-gallery">
-                      {% for img in interest.images %}
-                        <figure>
-                          <img width="600"
-                               height="338"
-                               src="{{ img.img_path }}"
-                               alt="{{ img.caption }}">
-                          <figcaption>{{ img.caption }}</figcaption>
-                        </figure>
-                      {% endfor %}
-                    </div>
-                  {% endif %}
-                </section>
-              {% endfor %}
             </section>
           {% endif %}
         </aside>
